@@ -1,7 +1,7 @@
 {
   "name": "libhypercore",
   "version": "0.0.1",
-  "repo": "littlstar/libhypercore",
+  "repo": "jwerle/libhypercore",
   "keywords": [],
   "install": "configure && make && make install",
   "development": {
