@@ -1,0 +1,3 @@
+#ifndef HC_PLATFORM_WINDOWS_H
+#define HC_PLATFORM_WINDOWS_H
+#endif

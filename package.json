@@ -1,0 +1,15 @@
+{
+  "name": "libhypercore",
+  "version": "0.0.1",
+  "repo": "littlstar/libhypercore",
+  "keywords": [],
+  "install": "configure && make && make install",
+  "development": {
+    "jwerle/libok": "0.0.2",
+    "stephenmathieson/assertion-macros.h": "0.3.1",
+    "stephenmathieson/describe.h": "2.1.2"
+  },
+  "dependencies": {
+    "clibs/hash": "0.0.1"
+  }
+}

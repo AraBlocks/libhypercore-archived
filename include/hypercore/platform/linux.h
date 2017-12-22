@@ -1,0 +1,3 @@
+#ifndef HC_PLATFORM_LINUX_H
+#define HC_PLATFORM_LINUX_H
+#endif
