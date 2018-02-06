@@ -6,7 +6,7 @@
  * provided by the hc Group
  */
 
-#if defined(_WIN32)
+#if defined(_MSC_VER)
 #  define HC_EXPORT __declspec(dllexport)
 #elif defined(__GNUC__) && (__GNUC__ * 100 + __GNUC_MINOR) >= 303
 #  define HC_EXPORT __attribute__((visibility("default")))
