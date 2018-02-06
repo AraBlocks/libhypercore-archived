@@ -1,1 +1,16 @@
 Makefile
+build/
+int/
+*.o
+.vs
+*.aps
+*.obj
+*.log
+*.pch
+*.pdb
+*.sdf
+*.vcxproj.user
+*.exe
+*.dll
+*.lib
+*.suo
