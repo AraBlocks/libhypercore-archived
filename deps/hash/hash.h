@@ -100,7 +100,4 @@ hash_has(hash_t *self, char *key);
 void
 hash_del(hash_t *self, char *key);
 
-void
-hash_clear(hash_t *self);
-
 #endif /* HASH */
