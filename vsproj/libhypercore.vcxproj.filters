@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{3bc0f5e5-21ed-4f37-b85b-ef38c9e09261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{d2d79fe8-2019-47a7-988c-081022ac42a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f8a8e0ca-577e-4537-9e39-e003e82e90f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="visualstudio">
+      <UniqueIdentifier>{e37f1243-f37b-4f58-96bf-c169c8888c0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os">
+      <UniqueIdentifier>{d0e0620e-30ea-425a-ba6a-de82046e8a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\os\unix">
+      <UniqueIdentifier>{18a119ed-ca35-4d65-9df5-ef4b89717cf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\assertion-macros">
+      <UniqueIdentifier>{bcd13702-7a0b-49be-bfe3-ca48f4192839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\console-colors">
+      <UniqueIdentifier>{9651f1f8-e895-4d82-8425-438203731ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\describe">
+      <UniqueIdentifier>{41dec25f-8ea2-4cac-b77a-284ec7fbbb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\hash">
+      <UniqueIdentifier>{8e2a63ac-c90c-4043-8dbc-ffa3fa02a50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps\ok">
+      <UniqueIdentifier>{4c99cd7d-1eb1-4ceb-a663-f78ace3c0319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hypercore">
+      <UniqueIdentifier>{980c0f6a-3e4b-4171-94ee-c747028bb29c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hypercore\platform">
+      <UniqueIdentifier>{566c6800-2f18-44e8-a1a1-00a6809a7dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\hypercore\targets">
+      <UniqueIdentifier>{71dffd71-ee80-4e3c-8573-f0882f0db9b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\memory.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\platform.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\os\unix\alloc.c">
+      <Filter>src\os\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\console-colors\console-colors.c">
+      <Filter>deps\console-colors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\describe\describe.c">
+      <Filter>deps\describe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\hash\hash.c">
+      <Filter>deps\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\deps\ok\ok.c">
+      <Filter>deps\ok</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\deps\assertion-macros\assertion-macros.h">
+      <Filter>deps\assertion-macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\console-colors\console-colors.h">
+      <Filter>deps\console-colors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\describe\describe.h">
+      <Filter>deps\describe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\hash\hash.h">
+      <Filter>deps\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\hash\khash.h">
+      <Filter>deps\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\deps\ok\ok.h">
+      <Filter>deps\ok</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\alloc.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\common.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\hash.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\hypercore.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\memory.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\platform.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\ref.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\targets.h">
+      <Filter>include\hypercore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\targets\cpu.h">
+      <Filter>include\hypercore\targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\targets\os.h">
+      <Filter>include\hypercore\targets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\platform\android.h">
+      <Filter>include\hypercore\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\platform\ios.h">
+      <Filter>include\hypercore\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\platform\linux.h">
+      <Filter>include\hypercore\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\platform\macos.h">
+      <Filter>include\hypercore\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\hypercore\platform\windows.h">
+      <Filter>include\hypercore\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>visualstudio</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libhypercore.rc">
+      <Filter>visualstudio</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
