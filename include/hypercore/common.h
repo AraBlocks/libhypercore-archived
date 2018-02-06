@@ -7,7 +7,7 @@
  */
 
 #if defined(_WIN32)
-#  define HC_EXPORT __declspec(dllimport)
+#  define HC_EXPORT __declspec(dllexport)
 #elif defined(__GNUC__) && (__GNUC__ * 100 + __GNUC_MINOR) >= 303
 #  define HC_EXPORT __attribute__((visibility("default")))
 #  define HC_INLINE inline
