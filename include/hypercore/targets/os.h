@@ -45,13 +45,11 @@
   #define HC_TARGET_OS_WINDOWS 0
   #define HC_TARGET_OS_ANDROID 1
 #elif defined(__WINDOWS__)
-  #if defined(_WIN64)
     #define HC_TARGET_OS_IOS 0
     #define HC_TARGET_OS_MACOS 0
     #define HC_TARGET_OS_LINUX 0
     #define HC_TARGET_OS_WINDOWS 1
     #define HC_TARGET_OS_ANDROID 0
-  #endif
 #else
   #define HC_TARGET_OS_IOS 0
   #define HC_TARGET_OS_MACOS 0
