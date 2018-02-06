@@ -25,6 +25,22 @@
   #else
     #error "Unsupported GNU compiler"
   #endif
+#elif defined(_MSC_VER)
+	#if defined(_M_ARM)
+		#define HC_CPU_ARM 1
+		#define HC_CPU_X86 0
+		#define HC_CPU_X86_64 0
+	#elif defined(_M_IX86)
+		#define HC_CPU_ARM 0
+		#define HC_CPU_X86 1
+		#define HC_CPU_X86_64 0
+	#elif defined(_M_X64)
+		#define HC_CPU_ARM 0
+		#define HC_CPU_X86 0
+		#define HC_CPU_X86_64 1
+	#else
+		#error "Unsupported MSVC compiler"
+	#endif
 #else
   #error "Unsupported CPU architecture"
 #endif
