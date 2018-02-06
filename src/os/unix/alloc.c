@@ -3,7 +3,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-#if defined(HC_HAVE_MEMALIGN)
+#if defined(_MSC_VER)
+  #include <malloc.h>
+  #define HC_HAVE_WINDOWS_MEMALIGNED 1
+#elif defined(HC_HAVE_MEMALIGN)
   #if defined(HC_HAVE_MALLOC_H)
     #include <malloc.h>
   #elif defined(HC_HAVE_MALLOC_MALLOC_H)
@@ -34,7 +37,13 @@ hc_calloc(HCsizei size) {
 
 HCvoid
 hc_free(HCvoid *ptr) {
-  if (ptr) { free(ptr); }
+  if (ptr) { 
+#if defined(HC_HAVE_WINDOWS_MEMALIGNED)
+    _aligned_free(ptr);
+#else
+	free(ptr);
+#endif
+  }
 }
 
 HCvoid *
@@ -49,11 +58,15 @@ hc_memalign(HCsizei alignment, HCsizei size) {
       // @TODO(werle): Do something with `err`
     }
   }
+#elif defined(HC_HAVE_WINDOWS_MEMALIGNED)
+  if (alignment && size) {
+    ptr = _aligned_malloc(size, alignment);
+  }
 #elif defined(HC_HAVE_MEMALIGNED)
   if (alignment && size) {
     ptr = memalign(alignment, size);
   }
-#else /** windows */
+#else /** other */
   (HCvoid) alignment;
   ptr = hc_alloc(size);
 #endif
